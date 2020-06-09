@@ -3,6 +3,3 @@
     <Label name="hiLabel">Hi!</Label>
     <Button name="clickMeButton" activebackground="white">Click me!</Button>
 </view>
-<logic>
-    No logic here!
-</logic>

@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import json
 import tkinter as tk
 
-configfile = open("config.json", "r")
+configfile = open("example/config.json", "r")
 config = json.loads(configfile.read())
 
 tree = ET.parse(config["path"])
