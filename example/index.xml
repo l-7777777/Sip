@@ -5,11 +5,12 @@
     </info>
     <view>
         <Label name="hiLabel" side="left">Hi!</Label>
-        <Button name="clickMeButton" side="right">Click me!</Button>
+        <Button name="clickMeButton" side="left">Click me!</Button>
     </view>
     <logic>
         <database name="database" host="sql9.freesqldatabase.com" user="sql9346989" password="H5BRUTgRJQ">
             <sql>USE sql9346989;</sql>
         </database>
+        <file type="bash">test.sh</file>
     </logic>
 </window>

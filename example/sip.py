@@ -47,9 +47,20 @@ class Application(tk.Frame):
 
 for child in XMLLogic:
     if child.tag == "database":
+        exec("global " + child.attrib["name"])
         exec(child.attrib["name"] + " = mysql.connector.connect(host = '" + child.attrib["host"] + "', user = '" + child.attrib["user"] + "', password = '" + child.attrib["password"] + "')")
         for command in child:
             exec(child.attrib["name"] + ".cursor().execute('" + command.text + "')")
+    elif child.tag == "python":
+        exec(child.text)
+    elif child.tag == "file":
+        if child.attrib["type"] == "python":
+            if child.attrib["relation"] == "separate":
+                os.system("python3 " + child.text)
+            elif child.attrib["relation"] == "extension":
+                exec(compile(open(child.text, "r").read(), child.text, 'exec'))
+        elif child.attrib["type"] == "bash":
+            os.system("./" + child.text)
 
 root = tk.Tk()
 root.title(XMLInfo.find("title").text)
