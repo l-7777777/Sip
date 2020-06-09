@@ -1,5 +1,15 @@
-
-<view>
-    <Label name="hiLabel">Hi!</Label>
-    <Button name="clickMeButton" activebackground="white">Click me!</Button>
-</view>
+<!DOCTYPE sip>
+<window width="500" height="500">
+    <info>
+        <title>An Example</title>
+    </info>
+    <view>
+        <Label name="hiLabel" side="left">Hi!</Label>
+        <Button name="clickMeButton" side="right">Click me!</Button>
+    </view>
+    <logic>
+        <database name="database" host="sql9.freesqldatabase.com" user="sql9346989" password="H5BRUTgRJQ">
+            <sql>USE sql9346989;</sql>
+        </database>
+    </logic>
+</window>
