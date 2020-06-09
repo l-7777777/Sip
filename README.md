@@ -21,7 +21,7 @@ To get these packages, follow these steps:
 You're all set!
 ## Example
 The example (in master/example/) is an example of a SIP app with just about all of the features in use. Download it, play with it,
-and use the docs for help. To run it, run `python3 sip.py`
+and use the wiki for help. To run it, run `python3 sip.py`
 ## Time to start!
 To start, run "sip init" on MacOS X and Linux, or "[Path-to-CLI]/sip.bat init" on Windows. Fill in the name of your project,
 in this case tutorialapp, its parent directory and the path to the executable of your favorite code editor. It will make you
@@ -55,4 +55,4 @@ connecting to sql databases and running python files and functions. Now, let's g
 <Button name="button1" side="left">Click Me!</Button>
 ```
 and run the app with `sip run [path-to-project]` or `[path-to-CLI]/sip.bat run [path-to-project]`. You should see a button
-that says "Click Me!" Good job! You made your first project! Now go read the docs, and learn SIP!
+that says "Click Me!" Good job! You made your first project! Now go read the wiki, and learn SIP!
